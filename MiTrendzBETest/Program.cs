@@ -10,6 +10,17 @@ namespace MiTrendzBETest
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Starting BE tests .......");
+            Console.WriteLine("Starting public APIs testing ..........");
+            StartTesting();
+            Console.WriteLine("Done public APIs testing!");
+            Console.WriteLine("PRESS ANY KEY TO EXIT");
+            Console.ReadKey();
+        }
+        static async void StartTesting()
+        {
+            PublicAPIsTester apisTester = new PublicAPIsTester();
+            await Task.Run(() => apisTester.StartTesting());
         }
     }
 }
