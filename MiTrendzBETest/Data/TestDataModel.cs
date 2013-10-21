@@ -12,6 +12,7 @@ namespace MiTrendzBETest
     }
     public class APITestResult
     {
+        //branch1
         public APITestResult()
         {
             Id = ObjectId.Empty;
@@ -25,6 +26,7 @@ namespace MiTrendzBETest
 
         }
         //test_branch comment
+        //branch1
         public ObjectId Id { set; get; }
         public DateTime startTime { set; get; }
         public DateTime endTime { set; get; }
